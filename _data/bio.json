@@ -1,118 +1,118 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Jennifer Nakano",
     "label": "Student",
     "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
+    "email": "jmnakano@hawaii.edu",
+    "phone": "808-238-9980",
+    "website": "https://jennifermnakano.github.io",
+    "summary": "I am studying for a B.S. in Computer Science with a concentration in data scaience in the Department of Information and Computer Sciences at the University of Hawaii at Manoa. I expect to graduate in Spring, 2024.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "mmaluhia", "url": "https://github.com/jennifermnakano" },
+      { "network": "linkedin", "username": "jennifer-nakano", "url": "https://www.linkedin.com/in/jennifer-nakano-2550321a5/" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Data Science" },
+    { "name": "Artificial Intelligence" },
+    { "name": "Machine Learning" },
+    { "name": "Robotics" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++","Javascript", "Python"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "VI/VIM", "UNIX Environments", "g++/gcc"]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
+      "area": "Computer Science - Data Science (expected Spring, 2024)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "startDate": "2022-08-22",
+      "endDate": "2024-05-18",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "University of Hawaii at Hilo, Hilo, HI",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "2020-08-17",
+      "endDate": "2022-05-13",
       "courses": [
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
+      "company": "University of Hawaii at Manoa",
+      "position": "Math Learning Assistant",
+      "website": "https://manoa.hawaii.edu/learning-assistant-program/",
+      "startDate": "2022-08-22",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Student Learning Assitant for MATH 134 courses at UH Manoa",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Assist students in completing in-class worksheets for pre-calculus courses",
+        "Hold office hours for students who require assistance outside of the classroom",
+        "Help instructors maintain the classroom and create a comfortable learning environement"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
+      "company": "University of Hawaii at Hilo",
+      "position": "Math Tutor",
+      "website": "https://hilo.hawaii.edu/kilohana/tutoring.php",
+      "startDate": "2021-8-23",
+      "endDate": "2022-05-13",
+      "summary": "Tutored college students in math courses from MATH 100(college algebra) up to MATH 243(calculus III)",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Manage a zoom room and tutoring center emails for students who are asking for assistance",
+        "Aided students understanding of rigorous math concepts"
+      ]
+    },
+    {
+      "company": "Waiakea High School",
+      "position": "High School Tutor",
+      "website": "",
+      "startDate": "2021-8-23",
+      "endDate": "2022-05-27",
+      "summary": "Tutored high school students in the respective content areas they needed assistance",
+      "highlights": [
+        "Manage the resource room and handled the students who came in for help or needed resources for their studies",
+        "Assisted teachers and faculty in duties around campus including grading, sorting papers, etc."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
+      "organization": "Waiakea Technology Learning Center",
       "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "position": "Student Mentor",
+      "startDate": "2022-01-03",
+      "endDate": "2022-03-11",
+      "summary": "Guided students in programming and robot design for the high school FIRST Robotics Competition",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Offered mentorship to students along the design process of their robot for competition",
+        "Assisted the programming team in developing software for the sensors and drivetrain of the robot"
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Deans List",
+      "date": "Fall 2020-Fall 2022",
+      "awarder": "University of Hawaii at Hilo and University of Hawaii at Manoa",
+      "summary": "Distinction awarded to students with an average GPA of 3.5 or higher."
     }
   ],
-  "references": [
-    {
-      "name": "Available upon request"
-    }
-  ]
+  //"references": [
+    //{
+      //"name": "Available upon request"
+    //}
+  //]
 }
