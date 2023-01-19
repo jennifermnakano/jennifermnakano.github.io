@@ -90,6 +90,31 @@
   ],
   "volunteer": [
     {
+      "organization": "Hawai‘i Space Grant Consortium ",
+      "website": "",
+      "position": "Undergraduate Research Trainee Internship",
+      "startDate": "2023-01-09",
+      "endDate": "Present",
+      "summary": "Conducting research to evaluate the effectiveness of an active learning algorithm",
+      "highlights": [
+        "Secured a NASA Hawaii Space Grant Consortium (HSGC) research trainee internship and grant",
+        "Working with the Robotic Space Exploration Lab to evaluate the efficacy of the incorporation of Gaussian processes with active learning on rovers for space exploration"
+      ]
+    },
+    {
+      "organization": "University of Hawaii at Hilo",
+      "website": "https://www.sciencedirect.com/science/article/pii/S0031320322005878",
+      "position": "Undergraduate Student Researcher",
+      "startDate": "2022-06-06",
+      "endDate": "2022-07-31",
+      "summary": "Worked directly under an assistant professor in their human-in-the-loop AI fish-tracking rearch project.",
+      "highlights": [
+        "Worked with fellow undergraduate researchers to test, evaluate, and optimize an AI code base",
+        "Created ablation scripts and code to assess the functionality and performance of the algorithm against ground truth values"
+        "Presented our results and progress to the public, including fellow scientists and researchers"
+      ]
+    },
+    {
       "organization": "Waiakea Technology Learning Center",
       "website": "",
       "position": "Student Mentor",
