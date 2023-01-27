@@ -31,8 +31,6 @@ This is an example of a smart question asked on [StackOverflow](https://stackove
 <br/><br/>
 <br/><br/>
 <br/><br/>
-<br/><br/>
-<br/><br/>
 
 <img width="500px" 
      class="rounded float-start pe-4" 
@@ -41,8 +39,6 @@ This is an example of a smart question asked on [StackOverflow](https://stackove
 This is an example of a not-so-smart question asked on [StackOverflow](https://stackoverflow.com/questions/75251869/java-non-static-method-cannot-be-referenced-from-an-static-context). The header is worded in a way where readers may be left confused or lost on what the question may be about. Even though a reason for why the code isn’t included is presented, it would be helpful for readers to see what the method, the user is referencing, looks like; it would also be beneficial for the user to include what the error message looked like so other users may recognize what is going on. In addition, the user is grovelling by saying things like “it is a pretty common mistake for beginners like me…” which isn’t helpful for the proposition of their question. The ambiguity of this question is reflected in the responses to this post reflected when they state things like “It is unclear what exactly is static and non-static in your case” and they offer resources to help to user understand the general content better.
 
 In general we can observe that questions which are asked in smart way receive more helpful responses compared to the questions that aren’t asked in a smart way.
-<br/><br/>
-<br/><br/>
 <br/><br/>
 <br/><br/>
 <br/><br/>
