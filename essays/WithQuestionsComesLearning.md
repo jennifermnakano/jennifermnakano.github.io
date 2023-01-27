@@ -27,6 +27,11 @@ We’ve always been assured that “there are no stupid questions” which is in
 This is an example of a smart question asked on [StackOverflow](https://stackoverflow.com/questions/8073673/how-can-i-add-new-array-elements-at-the-beginning-of-an-array-in-javascript). The header asks the question in a concise manner and proper background is given. We can see what the user is expecting and how the user wants to implement it. It asks a clear question and provides a general goal of what the user wants to accomplish. Because of the well-rounded nature of the question posted, in return, it received clear and concise answers in return that helped the user answer their question.
 
 
+<br>
+<br>
+<br>
+<br>
+
 <img width="500px" 
      class="rounded float-start pe-4" 
      src="../img/notsosmartQuestion.png" >
