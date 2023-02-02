@@ -12,7 +12,7 @@ labels:
 summary: "I competed in the FIRST Robotics competition in high school."
 ---
 
-<img class="img-fluid" src="../img/FIRST/FIRSTRobotics.jpeg">
+<img width="500px" class="img-fluid" src="../img/FIRST/FIRSTRobotics.jpeg">
 
 Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
 
