@@ -9,52 +9,11 @@ labels:
   - Java
   - LabView
   - Robotics
-summary: "I competed in the FIRST Robotics competition in high school."
+summary: "I competed in the FIRST Robotics Competition in high school."
 ---
 
 <img width="500px" class="img-fluid" src="../img/FIRST/FIRSTRobotics.jpeg">
 
-Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
+The [FIRST Robotics Competition](https://www.firstinspires.org/)(FRC) is a program designed to inspire and introduce high school students to the world of STEM. High School teams are given a challenge and are tasked to design, fabricate, build, wire, program, and drive a robot to compete against other teams. FRC promotes team work, problem solving skills, and chances to build both technical and soft skills.
 
-To give you a flavor of the game, here is an excerpt from one run:
-
-<hr>
-
-<pre>
-You open your eyes, and you are greeted by an unfamiliar ceiling.
-Startled, you get to your feet and quickly scan your surroundings. It's
-dark except for the stream of light coming from a crack on the only boarded
-window in the room. You try to peek through the crack, but you cannot see
-anything. You wonder where you are and who could have possibly brought you here.
-
-<--------------------help------------------------>
-Enter quit or one of the following commands -
-Weld light look walk pickup inventory help h ?
-<------------------------------------------------>
-
-look
-The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
- lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
- only way out of the room aside from the door to the corridor is a window that is boarded shut. It
- looks like it has been like that for decades. There is a door going west from here. You see a candle
- on the floor. You see a match on the floor.
-
-pickup candle
-- you are now carrying the candle -
-
-pickup match
-- you are now carrying the match -
-
-light match candle
-
-The candle is now lit. It illuminates everything in the room.
-
-walk west
-The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
- there are words written on the wall. There is a door going east from here. There is a way going north
- from here. There is a door going south from here.
-</pre>
-
-<hr>
-
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+In high school I was priviledged to work with an amazing team where we competed in the Sacramento regionals. On the team I served as a programmer/electrical, driver, and helped out on build team when needed. Throughout my high school career I gained experience in robot control such as manipulating PID values, sensors, and creating autonomous commands. FIRST played a major role in deciding that I wanted to go into computer science.
