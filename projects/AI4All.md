@@ -8,7 +8,6 @@ published: true
 labels:
   - Python
   - Linear Regression
-  - Presentation
 summary: "I worked in a team under the program AI4ALL and we created a linear regression model using CO2 data."
 ---
 
