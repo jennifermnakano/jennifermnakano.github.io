@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/AI4ALL/AI4ALL.jpeg
 title: "AI4ALL - Linear Regression on CO2 Data"
-date: 2022
+date: Fall 2022
 published: true
 labels:
   - Python
@@ -14,14 +14,58 @@ summary: "I worked in a team under the program AI4ALL and we created a linear re
 
 <img class="img-fluid" width="500px" src="../img/AI4ALL/linearRegression.png">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+[AI4ALL](https://ai-4-all.org/) is a program that was created in hopes of inspring students to purse careers in AI. In the fall 2022 semester I participated in the AI4ALL UH Manoa program and learned about the applications and fundamental techniques of AI including the different types of machine learning methods. We also discussed the ethical implications related to the collection/manipulation of data and AI implementation. 
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
+Throughout the program we were tasked to explore machine learning and its applications in the real world as well as investigate the positive and negative implications of AI. The motivation for our project was to predict trends in carbon dioxide over the years in different countries so we can focus on lowering emissions in the countries forcasted to increase their CO2 emissions. We did this by implementing a linear regression model on the data of some countries remarked in [this](https://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world) Kaggle dataset.
 
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
+Here is the source code that was used to generate our models:
 
-Here is some example code to illustrate Simple Schema use:
+```python
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 
-{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
- 
-Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
+#Carbon Dioxide Emissions of the World(1990-2018)
+historicalEmissions = pd.read_csv("historical_emissions.csv")
+cleanedData = historicalEmissions.drop(columns=['Unit', 'Country', 'Data source', 'Sector', 'Gas'])
+cleanedData = cleanedData[np.isfinite(cleanedData).all(1)]
+countries = historicalEmissions['Country']
+
+x_train = []
+x_plot = []
+
+#retrieving x values (years) for training and plotting
+for column in cleanedData.columns:
+    x_train.append([column])
+for i in range(2025, 1990, -1):
+    x_plot.append(i)
+x_train = np.array(x_train, dtype=int)
+
+#running through the top 10 countries that contribute to CO2 emissions
+for i in range(1, 11, 1):
+    #retrieving y values from each row
+    y_train = []
+    for value in cleanedData.loc[i]:
+        y_train.append(float(value))
+
+    #training/fitting the linear regression model
+    regModel = LinearRegression().fit(x_train, y_train)
+    print("Training score for", countries[i], ":", regModel.score(x_train,y_train))
+
+    #predicting on years 2019-2025 and adding it to the y values so we can plot it
+    for j in range(2019, 2025, 1):
+        y_train.insert(0, float(regModel.predict([[j]])))
+
+    # outputting the scatter plot for each linear regression model
+    plt.title("Linear Regression Model for " + countries[i])
+    plt.xlabel("Year")
+    plt.ylabel("Metric tons of carbon dioxide equivalent (MTCO2e)")
+    plt.ylim(0, 15000)
+    plt.scatter(x_plot, y_train)
+    # plotting best fit line
+    z = np.polyfit(x_plot, y_train, 1)
+    p = np.poly1d(z)
+    plt.plot(x_plot, p(x_plot), "r--")
+    plt.show()
+```
