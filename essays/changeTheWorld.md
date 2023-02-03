@@ -8,7 +8,7 @@ published: true
 labels:
   - Software Engineering
 ---
-<img width="300px" class="rounded float-start pe-4" src="../img/makeADifference/janeGodall.jpeg">
+<img width="300px" class="rounded float-start pe-4" src="../img/makeADifference/janeGooall.jpeg">
 
 ## I want to help
 
