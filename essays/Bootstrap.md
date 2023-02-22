@@ -10,7 +10,7 @@ labels:
 - Web Development
 ---
 
-<img width="300px"
+<img width="200px"
 class="rounded float-start pe-4"
 src="../img/Bootstrap/BOOTstrap.png" >
 ## The Thing on the Boot?
