@@ -10,11 +10,12 @@ labels:
 - Web Development
 ---
 
+<img width="500px"
+class="rounded float-start pe-4"
+src="../img/Bootstrap/BOOTstrap.png" >
 ## The Thing on the Boot?
-
 In regards to footwear, a bootstrap is a loop sewn at the side or back of a boot to help the user pull it on with ease. Without this simple loop, we would have to do that little “wiggle” we do to get into our boots/shoes. The concept is rather abstract, we took something already established, a boot, and made it easier to handle. Mundane as it may be, it improved the experience of boot users everywhere, saving us from making that silly face trying to put our shoes on.
 
-<img width="500px" class="rounded float-start pe-4" src=".../img/Bootstrap/BOOTstrap.png" >
 ## It’s also a Framework!
 Similarly, the Bootstrap framework took something that was routine for web developers, HTML and CSS, and made it more practical. Bootstrap was created to build a responsive web page by making template designs available requiring less CSS styling and overall, taking less time to develop webpages. For me, all it took was simply inserting a few words and phrases into classes to create a more clean, responsive page.
 
