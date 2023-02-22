@@ -20,7 +20,7 @@ In regards to footwear, a bootstrap is a loop sewn at the side or back of a boot
 Similarly, the Bootstrap framework took something that was routine for web developers, HTML and CSS, and made it more practical. Bootstrap was created to build a responsive web page by making template designs available requiring less CSS styling and overall, taking less time to develop webpages. For me, all it took was simply inserting a few words and phrases into classes to create a more clean, responsive page.
 
 
-<img width="500px"
+<img width="600px"
 class="rounded float-start pe-4"
 src="../img/Bootstrap/bootstrapWebsite.jpeg" >
 ## Advantages and Disadvantages
