@@ -9,7 +9,7 @@ labels:
   - Software Engineering
   - Design patterns
 ---
-<img width="300px" class="rounded float-start pe-4" src="../img/DesignPatterns/ResumeTemplate.jpeg">
+<img width="500px" class="rounded float-start pe-4" src="../img/DesignPatterns/ResumeTemplate.jpeg">
 
 ## The Art of Resume Templates
 
