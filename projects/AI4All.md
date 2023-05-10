@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/AI4ALL/AI4ALL.jpeg
 title: "AI4ALL - Linear Regression on CO2 Data"
-date: Fall 2022
+date: 2022
 published: true
 labels:
   - Python

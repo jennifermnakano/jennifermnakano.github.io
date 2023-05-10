@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/Fishtrack/fish.jpeg
 title: "Fish tracking AI"
-date: Summer 2022
+date: 2022
 published: true
 labels:
   - Human-in-the-loop AI
