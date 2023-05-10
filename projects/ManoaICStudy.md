@@ -14,7 +14,8 @@ labels:
 summary: "ICS students often spend more time than they need on their homework and don’t learn the material as effectively as they could, because they study alone and do not leverage the power of face-to-face study groups with peer mentors. Manoa ICStudy aims to help students create study groups to learn content efficiently and build everlasting relationships"
 ---
 
-<img width="500px" src="../img/ManoaICStudy/HomePage.jpeg">
+
+<div style="text-align:center"><img width="500px" src="../img/ManoaICStudy/HomePage.jpeg"></div>
 
 # Manoa ICStudy
 [Manoa ICStudy](https://manoa-icstudy.site/home) is a web application designed to help students create study groups for their ICS classes here at UH Manoa. Users are able to crate and edit study sessions, join/leave study sessions, view the available study sessions on a calendar, and attain points that can be redeemed by joining/creating study sessions.
