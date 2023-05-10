@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/ManoaICStudy/ManoaICStudy.jpeg
 title: "Manoa ICStudy"
-date: Spring 2023
+date: 2023
 published: true
 labels:
 - Software Engineering
@@ -21,6 +21,7 @@ summary: "ICS students often spend more time than they need on their homework an
 
 # Contributions
 For this project, I worked in a group with 3 other members. We utilized issue driven project management, which was sort of a "to-do list" of all the tasks we had to accomplish for our web application to function and look decent. For this project, I picked up on a lot of issues such as the create/edit study sessions page, mocking up the UI for the study session list layout, and creating some of the Test Cafe tests for the website pages. I also took charge in updating our [githubio](https://manoa-icstudy.github.io/) page including the pictures and description of how our website ran.
+
 <img width="500px" src="../img/ManoaICStudy/githubio.jpeg">
 
 # Conclusion
