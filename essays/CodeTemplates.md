@@ -4,7 +4,7 @@ type: essay
 title: "Code Templates"
 # All dates must be YYYY-MM-DD format!
 date: 2023-04-27
-published: true
+published: false
 labels:
   - Software Engineering
   - Design patterns

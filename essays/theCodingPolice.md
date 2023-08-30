@@ -4,7 +4,7 @@ type: essay
 title: "The Coding Police"
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-08
-published: true
+published: false
 labels:
   - JavaScript
   - ESLint
