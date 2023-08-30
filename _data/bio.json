@@ -15,6 +15,7 @@
   },
   "interests": [
     { "name": "Data Science" },
+    { "name": "Big Data" },
     { "name": "Artificial Intelligence" },
     { "name": "Machine Learning" },
     { "name": "Robotics" }
@@ -93,12 +94,24 @@
       "organization": "Hawai‘i Space Grant Consortium ",
       "website": "",
       "position": "Undergraduate Research Trainee Internship",
-      "startDate": "2023-01-09",
-      "endDate": "Present",
+      "startDate": "2023-01-12",
+      "endDate": "2023-08-07",
       "summary": "Conducting research to evaluate the effectiveness of an active learning algorithm",
       "highlights": [
         "Secured a NASA Hawaii Space Grant Consortium (HSGC) research trainee internship and grant",
         "Working with the Robotic Space Exploration Lab to evaluate the efficacy of the incorporation of Gaussian processes with active learning on rovers for space exploration"
+      ]
+    },
+    {
+      "organization": "Gemini North Observatory",
+      "website": "",
+      "position": "Akamai Workforce Intitiative Trainee",
+      "startDate": "2023-06-09",
+      "endDate": "Present",
+      "summary": "Worked on classifying variable stars in the Large Magellanic Cloud through multiple machine-learning models",
+      "highlights": [
+        "Utilizing a ensemble of different machine learning models and comparison metrics",
+        "Participated in professional development throughout the internship and presented final results at the Akamai symposium"
       ]
     },
     {
