@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="AI4ALL - Linear Regression on CO2 Data | Jennifer Nakano | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jennifermnakano.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jennifer Nakano | Professional Portfolio">
+    <meta property="og:url" content="https://jennifermnakano.github.io/projects/AI4All.html">
+    <meta property="og:title" content="AI4ALL - Linear Regression on CO2 Data | Jennifer Nakano | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jennifermnakano.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>AI4ALL - Linear Regression on CO2 Data | Jennifer Nakano | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jennifer Nakano</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">AI4ALL - Linear Regression on CO2 Data</h1>
+ <p><img class="img-fluid" width="500px" src="../img/AI4ALL/linearRegression.png" /></p>
+
+<p><a href="https://ai-4-all.org/">AI4ALL</a> is a program that was created in hopes of inspring students to purse careers in AI. In the fall 2022 semester I participated in the AI4ALL UH Manoa program and learned about the applications and fundamental techniques of AI including the different types of machine learning methods. We also discussed the ethical implications related to the collection/manipulation of data and AI implementation.</p>
+
+<p>Throughout the program we were tasked to explore machine learning and its applications in the real world as well as investigate the positive and negative implications of AI. The motivation for our project was to predict trends in carbon dioxide over the years in different countries so we can focus on lowering emissions in the countries forcasted to increase their CO2 emissions. We did this by implementing a linear regression model on the data of some countries remarked in <a href="https://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world">this</a> Kaggle dataset.</p>
+
+<p>Here is the source code that was used to generate our models:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1">#Carbon Dioxide Emissions of the World(1990-2018)
+</span><span class="n">historicalEmissions</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"historical_emissions.csv"</span><span class="p">)</span>
+<span class="n">cleanedData</span> <span class="o">=</span> <span class="n">historicalEmissions</span><span class="p">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'Unit'</span><span class="p">,</span> <span class="s">'Country'</span><span class="p">,</span> <span class="s">'Data source'</span><span class="p">,</span> <span class="s">'Sector'</span><span class="p">,</span> <span class="s">'Gas'</span><span class="p">])</span>
+<span class="n">cleanedData</span> <span class="o">=</span> <span class="n">cleanedData</span><span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">cleanedData</span><span class="p">).</span><span class="nb">all</span><span class="p">(</span><span class="mi">1</span><span class="p">)]</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">historicalEmissions</span><span class="p">[</span><span class="s">'Country'</span><span class="p">]</span>
+
+<span class="n">x_train</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_plot</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1">#retrieving x values (years) for training and plotting
+</span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">cleanedData</span><span class="p">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">x_train</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">column</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">x_plot</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="n">x_train</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1">#running through the top 10 countries that contribute to CO2 emissions
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1">#retrieving y values from each row
+</span>    <span class="n">y_train</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">cleanedData</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">y_train</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+
+    <span class="c1">#training/fitting the linear regression model
+</span>    <span class="n">regModel</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">().</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Training score for"</span><span class="p">,</span> <span class="n">countries</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">":"</span><span class="p">,</span> <span class="n">regModel</span><span class="p">.</span><span class="n">score</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">))</span>
+
+    <span class="c1">#predicting on years 2019-2025 and adding it to the y values so we can plot it
+</span>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">y_train</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">regModel</span><span class="p">.</span><span class="n">predict</span><span class="p">([[</span><span class="n">j</span><span class="p">]])))</span>
+
+    <span class="c1"># outputting the scatter plot for each linear regression model
+</span>    <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Linear Regression Model for "</span> <span class="o">+</span> <span class="n">countries</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Year"</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Metric tons of carbon dioxide equivalent (MTCO2e)"</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15000</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="c1"># plotting best fit line
+</span>    <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">p</span><span class="p">(</span><span class="n">x_plot</span><span class="p">),</span> <span class="s">"r--"</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
