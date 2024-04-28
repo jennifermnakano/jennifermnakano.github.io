@@ -4,7 +4,7 @@ type: essay
 title: "Javascript For Dummies"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-18
-published: true
+published: false
 labels:
   - JavaScript
   - Athletic Software Engineering
