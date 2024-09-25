@@ -4,10 +4,10 @@
     "label": "Student",
     "picture": "https://github.com/jennifermnakano.png",
     "email": "jmnakano@hawaii.edu",
-    "phone": "808-238-9980",
-    "website": "https://jennifermnakano.github.io",
+    "phone": "",
+    "website": "",
     "summary": "I am studying for a B.S. in Computer Science with a concentration in data science and a minor in Mathematics at the University of Hawaii at Manoa. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "location": { "address": "", "postalCode": "96720b", "city": "Hilo", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "jennifermnakano", "url": "https://github.com/jennifermnakano" },
       { "network": "linkedin", "username": "jennifer-nakano", "url": "https://www.linkedin.com/in/jennifer-nakano-2550321a5/" }
@@ -18,7 +18,8 @@
     { "name": "Big Data" },
     { "name": "Artificial Intelligence" },
     { "name": "Machine Learning" },
-    { "name": "Robotics" }
+    { "name": "Robotics" },
+    { "name": "Education" }
   ],
   "skills": [
     {
@@ -32,8 +33,17 @@
   ],
   "education": [
     {
+      "institution": "University of Hawaii at Hilo, Hilo, HI",
+      "area": "Secondary Education",
+      "studyType": "M.A.",
+      "startDate": "2024-06-30",
+      "endDate": "2026-05-30",
+      "courses": [
+      ]
+    },
+    {
       "institution": "University of Hawaii at Manoa, Honolulu, HI",
-      "area": "Computer Science - Data Science (expected Spring, 2024)",
+      "area": "Computer Science - Data Science and Mathematics",
       "studyType": "B.S.",
       "startDate": "2022-08-22",
       "endDate": "2024-05-18",
@@ -48,16 +58,32 @@
       "endDate": "2022-05-13",
       "courses": [
       ]
+    },
+    {
+      "institution": "Waiakea High School, Hilo, HI",
+      "studyType": "High School Diploma",
+      "startDate": "2016-08-1",
+      "endDate": "2020-05-30",
+      "courses": [
+      ]
     }
   ],
   "work": [
+    {
+      "company": "Hawaii Department of Education",
+      "position": "Substitute Teacher",
+      "website": "",
+      "startDate": "2024-06-30",
+      "endDate": "Present",
+      "summary": "Serving as a substitute teacher for K-12 within Hawaii's DOE"
+    },
     {
       "company": "University of Hawaii at Manoa",
       "position": "Math Learning Assistant",
       "website": "https://manoa.hawaii.edu/learning-assistant-program/",
       "startDate": "2022-08-22",
-      "endDate": "Present",
-      "summary": "Student Learning Assitant for MATH 134 courses at UH Manoa",
+      "endDate": "2024-05-30",
+      "summary": "Student Learning Assitant for MATH 134/140 courses at UH Manoa",
       "highlights": [
         "Assist students in completing in-class worksheets for pre-calculus courses",
         "Hold office hours for students who require assistance outside of the classroom",
@@ -91,20 +117,31 @@
   ],
   "volunteer": [
     {
+      "organization": "Gemini North Observatory",
+      "website": "",
+      "position": "Science Internship",
+      "startDate": "2023-10-12",
+      "endDate": "2024-06-01",
+      "summary": "Worked on classifying variable stars in Antila II Galaxy through multiple machine-learning models",
+      "highlights": [
+        "Continutation of Akamai Workforce Initiative intenship under mentor Clara Martínez-Vázquez "
+      ]
+    },
+    {
       "organization": "Hawai‘i Space Grant Consortium ",
       "website": "",
       "position": "Undergraduate Research Trainee Internship",
       "startDate": "2023-01-12",
-      "endDate": "Present",
+      "endDate": "2024-01-01",
       "summary": "Conducting research to evaluate the effectiveness of an active learning algorithm",
       "highlights": [
         "Secured a NASA Hawaii Space Grant Consortium (HSGC) research trainee internship and grant",
-        "Working with the Robotic Space Exploration Lab to evaluate the efficacy of the incorporation of Gaussian processes with active learning on rovers for space exploration"
+        "Working with the Robotic Space Exploration Lab (RoSE) to evaluate the efficacy of the incorporation of Gaussian processes with active learning on rovers for space exploration"
       ]
     },
     {
       "organization": "Gemini North Observatory",
-      "website": "",
+      "website": "https://www.akamaihawaii.org/jennifer-nakano-akamai-2023/",
       "position": "Akamai Workforce Intitiative Trainee",
       "startDate": "2023-06-09",
       "endDate": "2023-08-07",
@@ -143,7 +180,7 @@
   "awards": [
     {
       "title": "Deans List",
-      "date": "Fall 2020-Fall 2022",
+      "date": "Fall 2020-Fall 2024",
       "awarder": "University of Hawaii at Hilo and University of Hawaii at Manoa",
       "summary": "Distinction awarded to students with an average GPA of 3.5 or higher."
     }
